@@ -8,6 +8,7 @@ import { DISCORD_BOT_TOKEN } from 'src/app.environment';
     NecordModuleBase.forRoot({
       token: DISCORD_BOT_TOKEN,
       intents: [
+        IntentsBitField.Flags.GuildMembers,
         IntentsBitField.Flags.Guilds,
         IntentsBitField.Flags.GuildMessages,
         IntentsBitField.Flags.GuildMessageReactions,
